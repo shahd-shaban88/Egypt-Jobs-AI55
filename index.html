@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egypt Jobs AI | AI & ML Opportunities in Egypt</title>
+    <meta name="description" content="Find the best Artificial Intelligence and Machine Learning job opportunities and internships in Egypt.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="ph-fill ph-cpu"></i>
+                <span>EgyptJobs<span class="highlight">AI</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="#" class="active">Jobs</a>
+                <a href="#">Companies</a>
+                <a href="#">Resources</a>
+                <a href="#" class="btn-primary nav-btn">Post a Job</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="badge">🚀 The #1 AI Job Board in Egypt</div>
+                <h1>Find your next <span class="highlight-gradient">AI & ML</span> role</h1>
+                <p>Discover top opportunities from leading tech companies and innovative startups shaping the future of AI in Egypt.</p>
+                
+                <div class="search-wrapper">
+                    <div class="search-bar">
+                        <i class="ph ph-magnifying-glass search-icon"></i>
+                        <input type="text" id="searchInput" placeholder="Search for 'Machine Learning', 'Computer Vision', 'Data Scientist'...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <aside class="filters-sidebar">
+            <div class="filter-header-mobile">
+                <h3>Filters</h3>
+                <button id="closeFiltersBtn" class="close-btn"><i class="ph ph-x"></i></button>
+            </div>
+            
+            <div class="filter-group">
+                <h3>Job Type</h3>
+                <div class="filter-options">
+                    <label class="filter-label">
+                        <input type="checkbox" class="filter-checkbox" value="Full-time" data-filter="type">
+                        <span class="custom-checkbox"><i class="ph-bold ph-check"></i></span>
+                        Full-time
+                    </label>
+                    <label class="filter-label">
+                        <input type="checkbox" class="filter-checkbox" value="Part-time" data-filter="type">
+                        <span class="custom-checkbox"><i class="ph-bold ph-check"></i></span>
+                        Part-time
+                    </label>
+                    <label class="filter-label">
+                        <input type="checkbox" class="filter-checkbox" value="Internship" data-filter="type">
+                        <span class="custom-checkbox"><i class="ph-bold ph-check"></i></span>
+                        Internship
+                    </label>
+                    <label class="filter-label">
+                        <input type="checkbox" class="filter-checkbox" value="Contract" data-filter="type">
+                        <span class="custom-checkbox"><i class="ph-bold ph-check"></i></span>
+                        Contract
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <h3>Work Mode</h3>
+                <div class="filter-options">
+                    <label class="filter-label">
+                        <input type="checkbox" class="filter-checkbox" value="On-site" data-filter="mode">
+                        <span class="custom-checkbox"><i class="ph-bold ph-check"></i></span>
+                        On-site
+                    </label>
+                    <label class="filter-label">
+                        <input type="checkbox" class="filter-checkbox" value="Remote" data-filter="mode">
+                        <span class="custom-checkbox"><i class="ph-bold ph-check"></i></span>
+                        Remote
+                    </label>
+                    <label class="filter-label">
+                        <input type="checkbox" class="filter-checkbox" value="Hybrid" data-filter="mode">
+                        <span class="custom-checkbox"><i class="ph-bold ph-check"></i></span>
+                        Hybrid
+                    </label>
+                </div>
+            </div>
+        </aside>
+
+        <section class="jobs-section">
+            <div class="jobs-header">
+                <div class="jobs-count-wrapper">
+                    <button id="mobileFilterBtn" class="btn-outline mobile-only"><i class="ph ph-faders"></i> Filters</button>
+                    <h2 id="resultsCount">Loading jobs...</h2>
+                </div>
+                <div class="sort-container">
+                    <span class="sort-label">Sort by</span>
+                    <div class="custom-select-wrapper">
+                        <select id="sortSelect" class="sort-select">
+                            <option value="newest">Newest First</option>
+                            <option value="oldest">Oldest First</option>
+                        </select>
+                        <i class="ph ph-caret-down select-icon"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="jobsContainer" class="jobs-grid">
+                <!-- Job cards will be dynamically inserted here -->
+            </div>
+            
+            <div id="noResults" class="no-results hidden">
+                <div class="no-results-icon">
+                    <i class="ph ph-magnifying-glass-minus"></i>
+                </div>
+                <h3>No jobs found</h3>
+                <p>Try adjusting your search or removing some filters.</p>
+                <button id="clearFiltersBtn" class="btn-secondary">Clear all filters</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <i class="ph-fill ph-cpu"></i>
+                    <span>EgyptJobs<span class="highlight">AI</span></span>
+                </a>
+                <p>Empowering the Egyptian AI & ML community by connecting top talent with innovative companies.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-col">
+                    <h4>Platform</h4>
+                    <a href="#">Browse Jobs</a>
+                    <a href="#">Companies</a>
+                    <a href="#">Salaries</a>
+                </div>
+                <div class="link-col">
+                    <h4>Resources</h4>
+                    <a href="#">Blog</a>
+                    <a href="#">Events</a>
+                    <a href="#">Community</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <span id="currentYear"></span> من تصميم Shahd Shaban</p>
+                <div class="social-links">
+                    <a href="#"><i class="ph-fill ph-linkedin-logo"></i></a>
+                    <a href="#"><i class="ph-fill ph-github-logo"></i></a>
+                    <a href="#"><i class="ph-fill ph-twitter-logo"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Job Card Template -->
+    <template id="jobCardTemplate">
+        <article class="job-card">
+            <div class="job-card-top">
+                <img src="" alt="" class="company-logo">
+                <div class="job-meta">
+                    <div class="job-title-row">
+                        <h3 class="job-title"></h3>
+                        <button class="save-job-btn" aria-label="Save Job">
+                            <i class="ph ph-bookmark"></i>
+                        </button>
+                    </div>
+                    <p class="company-name"></p>
+                </div>
+            </div>
+            <p class="job-description"></p>
+            <div class="job-tags">
+                <span class="tag type-tag"></span>
+                <span class="tag mode-tag"></span>
+                <span class="tag location-tag"><i class="ph ph-map-pin"></i> <span class="loc-text"></span></span>
+            </div>
+            <div class="job-card-bottom">
+                <span class="post-date"></span>
+                <a href="#" class="btn-primary apply-btn" target="_blank" rel="noopener noreferrer">Apply Now / تقديم</a>
+            </div>
+        </article>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>

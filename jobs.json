@@ -1,0 +1,100 @@
+{
+  "jobs": [
+    {
+      "id": "1",
+      "title": "Machine Learning Engineer",
+      "company": "Instabug",
+      "logo": "https://ui-avatars.com/api/?name=Instabug&background=0D8ABC&color=fff&rounded=true&size=128",
+      "type": "Full-time",
+      "mode": "Hybrid",
+      "location": "Cairo, Egypt",
+      "description": "Join our core AI team to build predictive models for app performance and bug triaging. Experience with PyTorch and NLP required. You will work on scaling models to process millions of crash reports daily.",
+      "datePosted": "2026-06-02T10:00:00Z",
+      "applyLink": "https://example.com/apply"
+    },
+    {
+      "id": "2",
+      "title": "Computer Vision Intern",
+      "company": "Valeo",
+      "logo": "https://ui-avatars.com/api/?name=Valeo&background=27AE60&color=fff&rounded=true&size=128",
+      "type": "Internship",
+      "mode": "On-site",
+      "location": "Smart Village, Cairo",
+      "description": "3-month summer internship focusing on perception algorithms for autonomous driving. C++ and OpenCV knowledge is a plus. Great opportunity to work on ADAS cutting-edge tech.",
+      "datePosted": "2026-06-01T08:30:00Z",
+      "applyLink": "https://example.com/apply"
+    },
+    {
+      "id": "3",
+      "title": "Senior AI Researcher",
+      "company": "IBM Client Innovation Center",
+      "logo": "https://ui-avatars.com/api/?name=IBM&background=2980B9&color=fff&rounded=true&size=128",
+      "type": "Full-time",
+      "mode": "Remote",
+      "location": "Egypt (Remote)",
+      "description": "Lead research initiatives in Generative AI and Foundation Models. Ph.D. in Computer Science or related field and strong publication record at NeurIPS/ICML required.",
+      "datePosted": "2026-05-28T14:15:00Z",
+      "applyLink": "https://example.com/apply"
+    },
+    {
+      "id": "4",
+      "title": "Data Scientist",
+      "company": "Swvl",
+      "logo": "https://ui-avatars.com/api/?name=Swvl&background=E74C3C&color=fff&rounded=true&size=128",
+      "type": "Full-time",
+      "mode": "Hybrid",
+      "location": "Cairo, Egypt",
+      "description": "Optimize routing algorithms using vast amounts of geospatial data. Python, SQL, and geospatial analysis skills needed. Help us revolutionize mass transit in emerging markets.",
+      "datePosted": "2026-06-03T09:00:00Z",
+      "applyLink": "https://example.com/apply"
+    },
+    {
+      "id": "5",
+      "title": "NLP Engineer",
+      "company": "Bosta",
+      "logo": "https://ui-avatars.com/api/?name=Bosta&background=F39C12&color=fff&rounded=true&size=128",
+      "type": "Contract",
+      "mode": "Remote",
+      "location": "Egypt (Remote)",
+      "description": "Help us build an intelligent chatbot for customer support using LLMs. 6-month contract with possibility of extension. Experience with Langchain and OpenAI APIs preferred.",
+      "datePosted": "2026-05-15T11:20:00Z",
+      "applyLink": "https://example.com/apply"
+    },
+    {
+      "id": "6",
+      "title": "Data Engineering Part-time",
+      "company": "Fawry",
+      "logo": "https://ui-avatars.com/api/?name=Fawry&background=F1C40F&color=fff&rounded=true&size=128",
+      "type": "Part-time",
+      "mode": "On-site",
+      "location": "Smart Village, Cairo",
+      "description": "Maintain and optimize our real-time data pipelines processing financial transactions. Great opportunity for senior students in their final year.",
+      "datePosted": "2026-06-02T15:00:00Z",
+      "applyLink": "https://example.com/apply"
+    },
+    {
+      "id": "7",
+      "title": "AI Product Manager",
+      "company": "Talabat",
+      "logo": "https://ui-avatars.com/api/?name=Talabat&background=FF5A00&color=fff&rounded=true&size=128",
+      "type": "Full-time",
+      "mode": "Hybrid",
+      "location": "New Cairo, Egypt",
+      "description": "Drive the vision and roadmap for AI-powered personalization in our food delivery app. Collaborate closely with data science and engineering teams.",
+      "datePosted": "2026-05-30T10:00:00Z",
+      "applyLink": "https://example.com/apply"
+    },
+    {
+      "id": "8",
+      "title": "Junior Data Analyst",
+      "company": "Vodafone Egypt",
+      "logo": "https://ui-avatars.com/api/?name=Vodafone&background=E60000&color=fff&rounded=true&size=128",
+      "type": "Full-time",
+      "mode": "On-site",
+      "location": "6th of October City",
+      "description": "Analyze telecom data to extract actionable insights. Proficiency in SQL, Excel, and PowerBI. Fresh graduates are welcome to apply.",
+      "datePosted": "2026-06-01T12:00:00Z",
+      "applyLink": "https://example.com/apply"
+    }
+  ]
+}
